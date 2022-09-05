@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.header,
+.main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 100%;
+    min-width: 32rem;
+    height: auto;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.header__logo {
+    margin-bottom: 5rem;
+}
+
+.header__main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    column-gap: 1rem;
+    row-gap: 3rem;
+}
+
+.header__people_left {
+    grid-row: 1;
+    grid-column: span 2;
+}
+
+.header__people_left>img {
+    width: 100%;
+}
+
+.header__people_right {
+    grid-row: 1;
+    grid-column: span 2;
+}
+
+.header__people_right>img {
+    width: 100%;
+}
+
+.header__content {
+    grid-row: 2;
+    grid-column: span 4;
+    padding: 0 10px;
+}
+
+.header__content>h1 {
+    font-size: 4.3rem;
+    font-weight: 900;
+    line-height: 5rem;
+    padding: 0px 1rem;
+    color: #28283d;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+}
+
+.header__content>p {
+    padding: 0 2rem;
+    color: #87879D;
+    margin-bottom: 2rem;
+}
+
+.header__content-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+
+a {
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 26px;
+    color: #ffffff;
+    border: 2px solid transparent;
+    padding: 14px 36px;
+    border-radius: 29px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.header__content-btns a:nth-child(1) {
+    background-color: #4D96A9;
+}
+
+.header__content-btns a:nth-child(1)>span {
+    opacity: 0.7;
+}
+
+.header__content-btns a:nth-child(2) {
+    background-color: #855fb1;
+}
+
+.main {
+    margin-top: 5rem;
+    padding: 0 2.2rem;
+}
+
+.index {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    margin: 0 auto;
+    width: 0.07rem;
+    height: 8rem;
+    background-color: #cdcdd6;
+}
+
+.circle {
+    padding: 1.5rem 1.8rem;
+    border-radius: 50%;
+    border: solid 1px #cdcdd6;
+    background-color: #fafafa;
+    ;
+}
+
+.circle>span {
+    font-weight: 900;
+    color: #87879d;
+    font-size: 1.7rem;
+}
+
+.main__people {
+    margin: 5rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+}
+
+.main__people img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.main__content>h3 {
+    text-transform: uppercase;
+    color: #4D96A9;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 0.3rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.main__content>h2 {
+    color: #28283d;
+    margin-bottom: 3rem;
+}
+
+.main__content>p {
+    color: #87879D;
+    text-align: center;
+    font-weight: 500;
+}
+
+.footer {
+    margin-top: 18rem;
+    min-height: 37rem;
+    width: 100%;
+    min-width: 32rem;
+    background-image: url(/images/mobile/image-footer.jpg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.footer__background {
+    background-color: #4D96AD;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.9;
+}
+
+.footer>.index {
+    position: absolute;
+    top: -14rem;
+    left: calc(50% - 3rem);
+    z-index: 1;
+}
+
+.footer__content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 5rem 2rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.footer__content>h2 {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.footer__content>p {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.footer__content>a {
+    background-color: #855FB1;
+    opacity: 1rem;
+
+}
+
+.footer__content>a span {
+    opacity: 0.7;
+}
